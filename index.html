@@ -4,248 +4,355 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Santiago Ramírez Orozco | Developer & Chemist</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Portafolio de Santiago Ramírez Orozco, Desarrollador de Software y Químico Farmacéutico.">
-
-  <meta property="og:title" content="Santiago Ramírez Orozco | Portfolio">
+  <title>Santiago Ramirez Orozco | Software Developer Portfolio</title>
+  <meta name="description" content="Portafolio de Santiago Ramirez Orozco. Desarrollador de software con perfil hibrido en tecnologia, quimica farmaceutica y operaciones.">
+  <meta property="og:title" content="Santiago Ramirez Orozco | Software Developer Portfolio">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
+  <meta property="og:description" content="Experiencia en desarrollo web, e-commerce, procesos operativos y soluciones tecnicas con impacto medible.">
+  <meta property="og:image" content="img/cover.png">
+  <meta property="og:url" content="https://a23310173.github.io/">
+  <meta name="theme-color" content="#0f1720">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#1a1a1a">
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container header-container">
-      <div class="logo">
-        <a href="#home">
-          <img src="img/profile.png" alt="Santiago Ramírez Orozco" class="profile-logo">
-        </a>
-      </div>
-      <nav class="main-nav">
+      <a class="brand" href="#home" aria-label="Inicio">
+        <img src="img/profile.png" alt="Foto de Santiago Ramirez Orozco" class="profile-logo">
+        <span class="brand-copy">
+          <strong>Santiago Ramirez Orozco</strong>
+          <span>Software Developer</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
         <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#about">Perfil</a></li>
           <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#skills">Habilidades</a></li>
           <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
-      <div class="header-cta">
-        <a href="img/CV%20SANTIAGO%20RAMIREZ%20OROZCO%20WP.pdf" target="_blank" class="btn btn-outline">Descargar CV</a>
+
+      <div class="header-actions">
+        <a href="img/CV%20SANTIAGO%20RAMIREZ%20OROZCO%20WP.pdf" target="_blank" rel="noreferrer" class="btn btn-ghost">Ver CV</a>
+        <a href="https://github.com/a23310173" target="_blank" rel="noreferrer" class="btn btn-primary">GitHub</a>
       </div>
-      <button class="mobile-menu-toggle" aria-label="Menu">
+
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
+
+    <div id="mobile-nav" class="mobile-panel">
+      <a href="#about">Perfil</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#contact">Contacto</a>
+      <a href="img/CV%20SANTIAGO%20RAMIREZ%20OROZCO%20WP.pdf" target="_blank" rel="noreferrer">Ver CV</a>
+    </div>
   </header>
 
-  <!-- Hero Section (Cover Only) -->
-  <section id="home" class="hero-section">
-    <!-- Image background handled in CSS -->
-  </section>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-backdrop"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Tecnologia, negocio y rigor operativo</p>
+          <h1>Construyo software claro para problemas reales.</h1>
+          <p class="hero-summary">
+            Soy un desarrollador con formacion en quimica farmaceutica y experiencia ejecutando proyectos de software,
+            e-commerce, ciberseguridad y mejora de procesos. Mi foco es convertir necesidades operativas en soluciones utiles,
+            mantenibles y con impacto medible.
+          </p>
 
-  <!-- Intro Section (Text moved here) -->
-  <section class="intro-section">
-    <div class="container intro-content">
-      <h1 class="hero-title">Santiago Ramírez Orozco</h1>
-      <h2 class="hero-subtitle">Desarrollador de Software & Químico Farmacéutico</h2>
-      <p class="hero-slogan">Code with clarity.</p>
-      <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about-section">
-    <div class="container">
-      <h2 class="section-title">La precisión científica aplicada al código</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Soy un solucionador de problemas versátil con una trayectoria única que abarca los sectores farmacéutico y tecnológico. Combino el rigor analítico de la química con la lógica del desarrollo de software para crear soluciones digitales eficientes, seguras y escalables. Busco aportar mi aptitud técnica y ética de trabajo a proyectos desafiantes como Desarrollador de Software.</p>
-        </div>
-        <!-- Optional Graphic Placeholder -->
-        <div class="about-graphic">
-          <div class="intersection-graphic">
-            <div class="circle chemistry">Química</div>
-            <div class="circle tech">Código</div>
-            <div class="overlap">Soluciones</div>
+          <div class="hero-tags" aria-label="Datos clave">
+            <span>Zapopan, Jalisco</span>
+            <span>Ingles C1</span>
+            <span>Internship part-time desde agosto 2026</span>
           </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explorar proyectos</a>
+            <a href="#contact" class="btn btn-secondary">Contactar</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="panel-card stat-card">
+            <p class="panel-label">Impacto comprobado</p>
+            <strong>+200%</strong>
+            <span>incremento de ventas online tras relanzar el e-commerce de DermaSun</span>
+          </div>
+
+          <div class="panel-card">
+            <p class="panel-label">Fortalezas</p>
+            <ul class="panel-list">
+              <li>Full-stack web con PHP, SQL, HTML, CSS y JavaScript</li>
+              <li>Optimizacion de operaciones y procesos de laboratorio</li>
+              <li>Ciberseguridad, redes e implementacion tecnica</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Perfil</p>
+          <h2>Un perfil hibrido entre software, ciencia y ejecucion.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <h3>Desarrollo con contexto de negocio</h3>
+            <p>
+              He trabajado en sitios web, catalogos dinamicos y relanzamientos digitales con una mentalidad orientada a resultados:
+              mas conversion, mejor operacion y una experiencia mas clara para el usuario final.
+            </p>
+          </article>
+
+          <article class="about-card reveal">
+            <h3>Precision operativa</h3>
+            <p>
+              Mi experiencia en quimica farmaceutica me dio disciplina, documentacion rigurosa y una forma estructurada de resolver
+              problemas complejos sin perder calidad ni trazabilidad.
+            </p>
+          </article>
+
+          <article class="about-card reveal">
+            <h3>Colaboracion y liderazgo</h3>
+            <p>
+              He coordinado proyectos tecnicos, rediseñado flujos de trabajo y colaborado directamente con clientes para llevar
+              ideas desde el requerimiento inicial hasta una entrega funcional.
+            </p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section projects-section">
-    <div class="container">
-      <h2 class="section-title">Proyectos Destacados</h2>
-
-      <!-- Project 1 -->
-      <article class="project-card">
-        <div class="project-info">
-          <h3 class="project-title">DermaSun E-commerce Relaunch</h3>
-          <p class="project-role">Full-Stack & Negocios</p>
-          <p class="project-desc">Desarrollo y relanzamiento de plataforma de e-commerce.</p>
-          <div class="project-highlight">
-            <strong>Logro clave:</strong> Generó un aumento del 200% en ventas online en los primeros seis meses.
-          </div>
-          <ul class="tech-stack">
-            <li>PHP</li>
-            <li>SQL</li>
-            <li>HTML/CSS</li>
-            <li>E-commerce</li>
-          </ul>
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Proyectos destacados</p>
+          <h2>Trabajo enfocado en impacto, no solo en implementacion.</h2>
         </div>
-      </article>
 
-      <!-- Project 2 -->
-      <article class="project-card">
-        <div class="project-info">
-          <h3 class="project-title">Natural-Hair.mx</h3>
-          <p class="project-role">Arquitectura Full-Stack</p>
-          <p class="project-desc">Arquitectura y desarrollo de un sitio de catálogo dinámico a medida para la industria de la belleza.</p>
-          <ul class="project-features">
-            <li>Catálogo de productos</li>
-            <li>Buscador de ubicaciones</li>
-            <li>Sección Q&A</li>
-            <li>Base de datos SQL personalizada</li>
-          </ul>
-          <ul class="tech-stack">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-      </article>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-role">DermaSun</span>
+              <span class="project-metric">+200% ventas online</span>
+            </div>
+            <h3>Relaunch de e-commerce y presencia digital</h3>
+            <p>
+              Desarrolle y relance la plataforma de comercio electronico de la empresa, mejorando el canal online y apoyando
+              tambien la actualizacion continua del sitio y redes sociales.
+            </p>
+            <ul class="feature-list">
+              <li>Relanzamiento completo del sitio</li>
+              <li>Soporte a la operacion digital de la marca</li>
+              <li>Enfoque en resultados comerciales medibles</li>
+            </ul>
+            <ul class="tag-list">
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>HTML/CSS</li>
+              <li>E-commerce</li>
+            </ul>
+          </article>
 
-      <!-- Project 3 -->
-      <article class="project-card">
-        <div class="project-info">
-          <h3 class="project-title">Optimización de Flujos de Laboratorio</h3>
-          <p class="project-role">Procesos + Tech</p>
-          <p class="project-desc">Análisis y reingeniería de flujos de trabajo de laboratorio para mejorar la eficiencia y estandarizar procesos operativos.</p>
-        </div>
-      </article>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-role">Freelance</span>
+              <span class="project-metric">Full-stack a medida</span>
+            </div>
+            <h3>Natural-hair.mx</h3>
+            <p>
+              Arquitectura y desarrollo de un sitio de catalogo dinamico para la industria de belleza, trabajando de cerca con el
+              cliente para aterrizar requerimientos y asegurar una entrega alineada al negocio.
+            </p>
+            <ul class="feature-list">
+              <li>Catalogo de productos y buscador de ubicaciones</li>
+              <li>Seccion de preguntas y respuestas</li>
+              <li>Base de datos SQL personalizada</li>
+            </ul>
+            <ul class="tag-list">
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>CSS</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
 
-      <div class="projects-cta">
-        <a href="https://github.com/a23310173" target="_blank" class="btn btn-secondary">Ver más en GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <h2 class="section-title">Habilidades</h2>
-      <div class="skills-grid">
-        <div class="skills-category">
-          <h3><span class="icon">💻</span> Técnicas</h3>
-          <ul class="skills-list">
-            <li>Python</li>
-            <li>SQL/MYSQL</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-            <li>Cybersecurity</li>
-            <li>Network Installation</li>
-          </ul>
-        </div>
-        <div class="skills-category">
-          <h3><span class="icon">🤝</span> Profesionales</h3>
-          <ul class="skills-list">
-            <li>Resolución de problemas</li>
-            <li>Pensamiento Analítico</li>
-            <li>Gestión de Proyectos</li>
-            <li>Liderazgo de equipos</li>
-          </ul>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-role">Operaciones</span>
+              <span class="project-metric">Eficiencia interna</span>
+            </div>
+            <h3>Reingenieria de procesos de laboratorio</h3>
+            <p>
+              Analice y rediseñe flujos de trabajo del equipo de laboratorio para mejorar eficiencia, estandarizar procesos y
+              fortalecer la operacion diaria desde una perspectiva tecnica y sistemica.
+            </p>
+            <ul class="feature-list">
+              <li>Analisis de procesos existentes</li>
+              <li>Estandarizacion operativa</li>
+              <li>Mejora de coordinacion del equipo</li>
+            </ul>
+            <ul class="tag-list">
+              <li>Operations</li>
+              <li>Documentation</li>
+              <li>Process Design</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section experience-section">
-    <div class="container">
-      <h2 class="section-title">Experiencia</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">2020 – Presente</div>
-          <div class="timeline-content">
-            <h3>Software Developer & Pharmaceutical Chemist</h3>
-            <span class="company">@ DermaSun</span>
-          </div>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Trayectoria</p>
+          <h2>Experiencia profesional y formacion tecnica.</h2>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Freelance</div>
-          <div class="timeline-content">
-            <h3>Web Developer</h3>
-            <span class="company">(Natural-hair.mx)</span>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Educación</div>
-          <div class="timeline-content">
-            <h3>Ingeniería en Desarrollo de Software (En curso)</h3>
-            <h3>Tecnólogo en Química Farmacéutica</h3>
-            <span class="company">@ CETI Colomos</span>
-          </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2020 - Presente</span>
+            <div class="timeline-body">
+              <h3>Software Developer & Pharmaceutical Chemist</h3>
+              <p class="timeline-meta">DermaSun · Zapopan, Mexico</p>
+              <p>
+                Lidero iniciativas tecnicas y operativas que van desde el desarrollo web hasta la mejora de procesos y la
+                implementacion de infraestructura de seguridad.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2025</span>
+            <div class="timeline-body">
+              <h3>Freelance Web Developer</h3>
+              <p class="timeline-meta">Natural-hair.mx · Cliente del sector belleza</p>
+              <p>
+                Diseñe y construí una solucion web a medida, colaborando de forma directa con el cliente durante todo el ciclo del proyecto.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2023 - 2027</span>
+            <div class="timeline-body">
+              <h3>Ingenieria en Desarrollo de Software</h3>
+              <p class="timeline-meta">CETI Colomos</p>
+              <p>Formacion actual enfocada en desarrollo de software y resolucion de problemas tecnicos.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2019 - 2022</span>
+            <div class="timeline-body">
+              <h3>Tecnologo en Quimica Farmaceutica</h3>
+              <p class="timeline-meta">CETI Colomos</p>
+              <p>Base cientifica y metodologica que hoy aplico en entornos de software, calidad y operaciones.</p>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer / Contact -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Habilidades y certificaciones</p>
+          <h2>Stack tecnico, herramientas profesionales y aprendizaje continuo.</h2>
+        </div>
+
+        <div class="skills-layout">
+          <article class="skills-card reveal">
+            <h3>Tecnicas</h3>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>PHP</li>
+              <li>SQL / MySQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Cybersecurity</li>
+              <li>Network Installation</li>
+            </ul>
+          </article>
+
+          <article class="skills-card reveal">
+            <h3>Profesionales</h3>
+            <ul class="tag-list">
+              <li>Project Management</li>
+              <li>Problem-Solving</li>
+              <li>Team Leadership</li>
+              <li>Analytical Thinking</li>
+              <li>Client Collaboration</li>
+            </ul>
+          </article>
+
+          <article class="skills-card reveal">
+            <h3>Certificaciones</h3>
+            <ul class="plain-list">
+              <li>ISO 27001 Workshop</li>
+              <li>Networking Devices and Initial Configuration by Cisco</li>
+              <li>Networking Basics by Cisco</li>
+              <li>Service Excellence Program, ILAC College, Toronto (2021)</li>
+            </ul>
+          </article>
+
+          <article class="skills-card reveal">
+            <h3>Idiomas</h3>
+            <ul class="plain-list">
+              <li>Espanol · Nativo</li>
+              <li>Ingles · C1 certificado</li>
+              <li>Frances · Basico</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer id="contact" class="site-footer">
-    <div class="container">
-      <h2 class="footer-title">Hablemos de soluciones claras.</h2>
-
-      <div class="footer-content">
-        <div class="contact-info">
-          <p><strong>Email:</strong> <a href="mailto:santiagor.orozco@gmail.com">santiagor.orozco@gmail.com</a></p>
-          <p><strong>Teléfono:</strong> <a href="tel:+523322979723">(+52) 3322979723</a></p>
-          <p><strong>Ubicación:</strong> Zapopan, Jalisco, Mexico</p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/a23310173" target="_blank">github.com/a23310173</a></p>
-        </div>
-
-        <form class="contact-form" action="#" method="POST">
-          <div class="form-group">
-            <label for="name" class="visually-hidden">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Nombre" required>
-          </div>
-          <div class="form-group">
-            <label for="email" class="visually-hidden">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-          </div>
-          <div class="form-group">
-            <label for="message" class="visually-hidden">Mensaje</label>
-            <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-        </form>
+    <div class="container footer-grid">
+      <div class="footer-copy reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>Disponible para colaborar en proyectos donde la ejecucion importe.</h2>
+        <p>
+          Si buscas a alguien que combine criterio tecnico, disciplina operativa y una forma clara de comunicar avances,
+          conversemos.
+        </p>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2023 Santiago Ramírez Orozco. Todos los derechos reservados.</p>
+      <div class="contact-card reveal">
+        <a href="mailto:santiagor.orozco@gmail.com">santiagor.orozco@gmail.com</a>
+        <a href="tel:+523322979723">+52 33 2297 9723</a>
+        <p>Zapopan, Jalisco, Mexico</p>
+        <a href="https://github.com/a23310173" target="_blank" rel="noreferrer">github.com/a23310173</a>
+        <a href="https://www.dermasun.net" target="_blank" rel="noreferrer">www.dermasun.net</a>
       </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Santiago Ramirez Orozco.</p>
     </div>
   </footer>
 

@@ -1,55 +1,74 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
-  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-  const mainNav = document.querySelector('.main-nav');
+  const header = document.querySelector('.site-header');
+  const mobileToggle = document.querySelector('.mobile-menu-toggle');
+  const mobilePanel = document.querySelector('.mobile-panel');
+  const currentYear = document.querySelector('#current-year');
+  const localLinks = document.querySelectorAll('a[href^="#"]');
+  const revealItems = document.querySelectorAll('.reveal');
 
-  if (mobileMenuToggle && mainNav) {
-    mobileMenuToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('active');
-      mobileMenuToggle.classList.toggle('active');
+  const closeMobileMenu = () => {
+    if (!mobileToggle || !mobilePanel) {
+      return;
+    }
+
+    mobileToggle.classList.remove('active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    mobilePanel.classList.remove('active');
+  };
+
+  if (mobileToggle && mobilePanel) {
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobilePanel.classList.toggle('active');
+      mobileToggle.classList.toggle('active', isOpen);
+      mobileToggle.setAttribute('aria-expanded', String(isOpen));
     });
   }
 
-  // Smooth Scrolling for Anchor Links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
+  localLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const targetId = link.getAttribute('href');
+      const target = targetId ? document.querySelector(targetId) : null;
 
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth'
-        });
-
-        // Close mobile menu if open
-        if (mainNav.classList.contains('active')) {
-          mainNav.classList.remove('active');
-          mobileMenuToggle.classList.remove('active');
-        }
+      if (!target) {
+        return;
       }
+
+      event.preventDefault();
+      closeMobileMenu();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 
-  // Sticky Header Background on Scroll
-  const header = document.querySelector('.site-header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+  const updateHeaderState = () => {
+    if (!header) {
+      return;
     }
-  });
 
-  // Form Submission Handling (Placeholder)
-  const contactForm = document.querySelector('.contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      // Here you would typically send the form data to a server
-      // For now, we'll just show an alert
-      alert('Gracias por tu mensaje. Me pondré en contacto contigo pronto.');
-      contactForm.reset();
+    header.classList.toggle('scrolled', window.scrollY > 18);
+  };
+
+  updateHeaderState();
+  window.addEventListener('scroll', updateHeaderState, { passive: true });
+
+  if (currentYear) {
+    currentYear.textContent = String(new Date().getFullYear());
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.16,
+      rootMargin: '0px 0px -40px 0px'
     });
+
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
   }
 });
