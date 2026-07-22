@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="es">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Santiago Ramirez Orozco | Software Developer Portfolio</title>
-  <meta name="description" content="Portafolio de Santiago Ramirez Orozco. Desarrollador de software con experiencia en análisis de datos, e-commerce, ciberseguridad y mejora de procesos operativos.">
+  <meta name="description" content="Portfolio of Santiago Ramirez Orozco, a software developer experienced in data analysis, e-commerce, cybersecurity, and operational process improvement.">
   <meta property="og:title" content="Santiago Ramirez Orozco | Software Developer Portfolio">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="Análisis de datos, dashboards, desarrollo web y operaciones. Experiencia en Jabil, DermaSun y proyectos freelance.">
+  <meta property="og:description" content="Data analysis, dashboards, web development, and operations. Experience at Jabil, DermaSun, and freelance projects.">
   <meta property="og:image" content="img/cover.png">
   <meta property="og:url" content="https://a23310173.github.io/">
   <meta name="theme-color" content="#ffffff">
@@ -26,30 +26,36 @@
 <body>
   <header class="site-header">
     <div class="container header-container">
-      <a class="brand" href="#home" aria-label="Inicio">
-        <img src="img/profile.png" alt="Foto de Santiago Ramirez Orozco" class="profile-logo">
+      <a class="brand" href="#home" aria-label="Home" data-i18n-aria-label="homeLabel">
+        <img src="img/profile.png" alt="Portrait of Santiago Ramirez Orozco" class="profile-logo" data-i18n-alt="profileAlt">
         <span class="brand-copy">
           <strong>Santiago Ramirez Orozco</strong>
           <span>Software Developer</span>
         </span>
       </a>
 
-      <nav class="main-nav" aria-label="Principal">
+      <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="mainNavigation">
         <ul>
-          <li><a href="#about">Perfil</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#about" data-i18n="navAbout">About</a></li>
+          <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+          <li><a href="#experience" data-i18n="navExperience">Experience</a></li>
+          <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
+          <li><a href="#contact" data-i18n="navContact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <a href="img/CV%20SANTIAGO%20RAMIREZ%20OROZCO%20WP.pdf" target="_blank" rel="noreferrer" class="btn btn-ghost">Ver CV</a>
+        <a href="img/CV%20SANTIAGO%20RAMIREZ%20OROZCO%20WP.pdf" target="_blank" rel="noreferrer" class="btn btn-ghost" data-i18n="viewCv">View CV</a>
         <a href="https://github.com/a23310173" target="_blank" rel="noreferrer" class="btn btn-primary">GitHub</a>
       </div>
 
-      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu">
+      <button class="language-toggle" type="button" aria-pressed="false" aria-label="Switch language to Spanish" title="Switch language to Spanish">
+        <span data-language="en" class="active">EN</span>
+        <span class="language-divider" aria-hidden="true"></span>
+        <span data-language="es">ES</span>
+      </button>
+
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-i18n-aria-label="openMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -57,12 +63,12 @@
     </div>
 
     <div id="mobile-nav" class="mobile-panel">
-      <a href="#about">Perfil</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#experience">Experiencia</a>
-      <a href="#skills">Habilidades</a>
-      <a href="#contact">Contacto</a>
-      <a href="img/CV%20SANTIAGO%20RAMIREZ%20OROZCO%20WP.pdf" target="_blank" rel="noreferrer">Ver CV</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#experience" data-i18n="navExperience">Experience</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+      <a href="img/CV%20SANTIAGO%20RAMIREZ%20OROZCO%20WP.pdf" target="_blank" rel="noreferrer" data-i18n="viewCv">View CV</a>
     </div>
   </header>
 
@@ -81,42 +87,38 @@
 
         <div class="hero-copy reveal">
           <span class="hero-name">Santiago Ramirez Orozco</span>
-          <h1>Construyo software claro<br>para <em>problemas reales.</em></h1>
-          <p class="hero-summary">
-            Desarrollador con formación en química farmacéutica y experiencia en análisis de datos,
-            desarrollo web y mejora de procesos. Actualmente en Jabil apoyando al área de Test Engineering
-            con dashboards, bases de datos y soluciones de software orientadas a operaciones.
-          </p>
+          <h1 data-i18n-html="heroTitle">I build clear software<br>for <em>real-world problems.</em></h1>
+          <p class="hero-summary" data-i18n="heroSummary">Software developer with a background in pharmaceutical chemistry and experience in data analysis, web development, and process improvement. Currently at Jabil, supporting Test Engineering with dashboards, databases, and operations-focused software solutions.</p>
 
-          <div class="hero-tags" aria-label="Datos clave">
+          <div class="hero-tags" aria-label="Key facts" data-i18n-aria-label="keyFacts">
             <span class="featured">Jabil · Test Engineering</span>
             <span>Zapopan, Jalisco</span>
-            <span>Inglés C1</span>
-            <span>Disponible ago. 2026</span>
+            <span data-i18n="englishLevel">English C1</span>
+            <span data-i18n="availableDate">Available Aug. 2026</span>
           </div>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Explorar proyectos</a>
-            <a href="#contact" class="btn btn-secondary">Contactar</a>
+            <a href="#projects" class="btn btn-primary" data-i18n="exploreProjects">Explore projects</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="contactAction">Get in touch</a>
           </div>
         </div>
 
         <aside class="hero-panel reveal">
           <div class="hero-profile-card">
-            <img src="img/profile.png" alt="Foto de Santiago Ramirez Orozco" class="hero-profile-img">
+            <img src="img/profile.png" alt="Portrait of Santiago Ramirez Orozco" class="hero-profile-img" data-i18n-alt="profileAlt">
             <p class="hero-profile-name">Santiago Ramirez Orozco</p>
             <p class="hero-profile-role">Software Developer</p>
             <div class="hero-status-badge">
               <span class="hero-status-dot"></span>
-              Internship activo
+              <span data-i18n="activeInternship">Active internship</span>
             </div>
           </div>
 
           <div class="panel-card stat-card">
-            <span class="panel-label">Impacto comprobado</span>
+            <span class="panel-label" data-i18n="provenImpact">Proven impact</span>
             <!-- Animated counter — Cult UI animated-number spring physics, vanilla JS -->
             <strong>+<span id="stat-counter" data-target="200" aria-label="200">0</span>%</strong>
-            <span class="stat-desc">incremento en ventas online · DermaSun</span>
+            <span class="stat-desc" data-i18n="salesIncrease">increase in online sales · DermaSun</span>
           </div>
         </aside>
 
@@ -127,33 +129,24 @@
     <section id="about" class="section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Perfil</p>
-          <h2>Un perfil híbrido entre software, datos y ejecución operativa.</h2>
+          <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+          <h2 data-i18n="aboutTitle">A hybrid profile spanning software, data, and operational execution.</h2>
         </div>
 
         <div class="about-grid">
           <article class="about-card reveal">
-            <h3>Datos y desarrollo de software</h3>
-            <p>
-              Analizo datos de procesos de manufactura y desarrollo herramientas como dashboards en Power BI y
-              bases de datos SQL para que los equipos tomen mejores decisiones con información clara y accionable.
-            </p>
+            <h3 data-i18n="aboutDataTitle">Data and software development</h3>
+            <p data-i18n="aboutDataBody">I analyze manufacturing process data and develop tools such as Power BI dashboards and SQL databases so teams can make better decisions with clear, actionable information.</p>
           </article>
 
           <article class="about-card reveal">
-            <h3>Desarrollo web con foco en negocio</h3>
-            <p>
-              He trabajado en sitios web, catálogos dinámicos y relanzamientos digitales con una mentalidad
-              orientada a resultados: más conversión, mejor operación y una experiencia más clara para el usuario.
-            </p>
+            <h3 data-i18n="aboutWebTitle">Business-focused web development</h3>
+            <p data-i18n="aboutWebBody">I have worked on websites, dynamic catalogs, and digital relaunches with a results-driven mindset: stronger conversion, better operations, and a clearer user experience.</p>
           </article>
 
           <article class="about-card reveal">
-            <h3>Precisión operativa y colaboración</h3>
-            <p>
-              Mi formación en química farmacéutica me dio disciplina y documentación rigurosa. He coordinado
-              proyectos técnicos y colaborado directamente con clientes desde el requerimiento hasta la entrega.
-            </p>
+            <h3 data-i18n="aboutOperationsTitle">Operational precision and collaboration</h3>
+            <p data-i18n="aboutOperationsBody">My pharmaceutical chemistry background gave me discipline and rigorous documentation practices. I have coordinated technical projects and worked directly with clients from requirements through delivery.</p>
           </article>
         </div>
       </div>
@@ -163,8 +156,8 @@
     <section id="projects" class="section section-alt">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Proyectos destacados</p>
-          <h2>Trabajo enfocado en impacto, no solo en implementación.</h2>
+          <p class="eyebrow" data-i18n="projectsEyebrow">Highlighted projects</p>
+          <h2 data-i18n="projectsTitle">Work focused on impact, not just implementation.</h2>
         </div>
 
         <div class="projects-grid">
@@ -173,15 +166,12 @@
               <span class="project-role">Jabil</span>
               <span class="project-metric">Test Engineering</span>
             </div>
-            <h3>Dashboards y bases de datos para manufactura</h3>
-            <p>
-              Análisis de datos de procesos de prueba y desarrollo de herramientas de software para el área de
-              Test Engineering, apoyando la toma de decisiones con datos visuales y estructurados.
-            </p>
+            <h3 data-i18n="jabilProjectTitle">Dashboards and databases for manufacturing</h3>
+            <p data-i18n="jabilProjectBody">Analysis of testing process data and development of software tools for Test Engineering, supporting decision-making with visual and structured data.</p>
             <ul class="feature-list">
-              <li>Dashboards operativos en Power BI</li>
-              <li>Diseño y mantenimiento de bases de datos</li>
-              <li>Automatización de reportes de proceso</li>
+              <li data-i18n="jabilFeature1">Operational dashboards in Power BI</li>
+              <li data-i18n="jabilFeature2">Database design and maintenance</li>
+              <li data-i18n="jabilFeature3">Process report automation</li>
             </ul>
             <ul class="tag-list">
               <li>Power BI</li>
@@ -194,17 +184,14 @@
           <article class="project-card reveal">
             <div class="project-topline">
               <span class="project-role">DermaSun</span>
-              <span class="project-metric">+200% ventas online</span>
+              <span class="project-metric" data-i18n="onlineSalesMetric">+200% online sales</span>
             </div>
-            <h3>Relaunch de e-commerce y presencia digital</h3>
-            <p>
-              Desarrollé y relancé la plataforma de comercio electrónico de la empresa, mejorando el canal online
-              y apoyando la actualización continua del sitio y redes sociales.
-            </p>
+            <h3 data-i18n="dermasunProjectTitle">E-commerce relaunch and digital presence</h3>
+            <p data-i18n="dermasunProjectBody">I developed and relaunched the company's e-commerce platform, strengthening its online channel and supporting ongoing website and social media updates.</p>
             <ul class="feature-list">
-              <li>Relanzamiento completo del sitio</li>
-              <li>Soporte a la operación digital de la marca</li>
-              <li>Enfoque en resultados comerciales medibles</li>
+              <li data-i18n="dermasunFeature1">Complete website relaunch</li>
+              <li data-i18n="dermasunFeature2">Support for the brand's digital operations</li>
+              <li data-i18n="dermasunFeature3">Focus on measurable business results</li>
             </ul>
             <ul class="tag-list">
               <li>PHP</li>
@@ -218,17 +205,14 @@
           <article class="project-card reveal">
             <div class="project-topline">
               <span class="project-role">DermaSun</span>
-              <span class="project-metric">ERP interno</span>
+              <span class="project-metric" data-i18n="internalErp">Internal ERP</span>
             </div>
             <h3>app.dermasun.net</h3>
-            <p>
-              Sistema de gestion empresarial para dermasun.net enfocado en centralizar procesos internos
-              y facilitar la administracion operativa del negocio.
-            </p>
+            <p data-i18n="dermasunAppBody">Business management system for dermasun.net focused on centralizing internal processes and simplifying day-to-day operations.</p>
             <ul class="feature-list">
-              <li>Gestion interna de procesos empresariales</li>
-              <li>Soporte a operacion y seguimiento de informacion</li>
-              <li>Desarrollo orientado a necesidades reales del negocio</li>
+              <li data-i18n="dermasunAppFeature1">Internal business process management</li>
+              <li data-i18n="dermasunAppFeature2">Operational support and information tracking</li>
+              <li data-i18n="dermasunAppFeature3">Development driven by real business needs</li>
             </ul>
             <ul class="tag-list">
               <li>PHP</li>
@@ -242,17 +226,14 @@
           <article class="project-card reveal">
             <div class="project-topline">
               <span class="project-role">Freelance</span>
-              <span class="project-metric">Webpage personal</span>
+              <span class="project-metric" data-i18n="personalWebsite">Professional website</span>
             </div>
             <h3>OZCTECH.net / ozctech.com.mx</h3>
-            <p>
-              Sitio de mi operación personal y profesional para presentar servicios, proyectos,
-              identidad digital y punto de contacto con clientes y colaboradores.
-            </p>
+            <p data-i18n="ozctechBody">My personal and professional platform for presenting services, projects, digital identity, and a point of contact for clients and collaborators.</p>
             <ul class="feature-list">
-              <li>Presencia profesional y portafolio personal</li>
-              <li>Canal directo de contacto y presentación de servicios</li>
-              <li>Base para identidad digital y marca personal</li>
+              <li data-i18n="ozctechFeature1">Professional presence and personal portfolio</li>
+              <li data-i18n="ozctechFeature2">Direct contact and service presentation channel</li>
+              <li data-i18n="ozctechFeature3">Foundation for digital identity and personal brand</li>
             </ul>
             <ul class="tag-list">
               <li>HTML/CSS</li>
@@ -265,18 +246,15 @@
 
           <article class="project-card reveal">
             <div class="project-topline">
-              <span class="project-role">Académico / ITSM</span>
+              <span class="project-role" data-i18n="academicItsm">Academic / ITSM</span>
               <span class="project-metric">KPIs + ITIL</span>
             </div>
             <h3>DeployTrack.store</h3>
-            <p>
-              Sistema de gestion ITIL con dashboard de KPIs para dar visibilidad a incidencias,
-              servicios y seguimiento operativo dentro de un flujo de soporte estructurado.
-            </p>
+            <p data-i18n="deployTrackBody">ITIL management system with a KPI dashboard that provides visibility into incidents, services, and operational tracking within a structured support workflow.</p>
             <ul class="feature-list">
-              <li>Dashboard de indicadores para gestion de servicios</li>
-              <li>Enfoque en procesos ITIL y trazabilidad</li>
-              <li>Vista ejecutiva para seguimiento operativo</li>
+              <li data-i18n="deployTrackFeature1">Service management KPI dashboard</li>
+              <li data-i18n="deployTrackFeature2">ITIL processes and traceability</li>
+              <li data-i18n="deployTrackFeature3">Executive view for operational tracking</li>
             </ul>
             <ul class="tag-list">
               <li>Node.js</li>
@@ -293,14 +271,11 @@
               <span class="project-metric">FIFA 2026</span>
             </div>
             <h3>Milaquiniela.site</h3>
-            <p>
-              Web app en Node.js para administrar una quiniela del Mundial FIFA 2026, con gestion
-              de participantes, partidos y dinamicas de seguimiento del torneo.
-            </p>
+            <p data-i18n="milaBody">Node.js web app for managing a FIFA World Cup 2026 prediction pool, including participants, matches, and tournament tracking.</p>
             <ul class="feature-list">
-              <li>Administracion de quiniela y participantes</li>
-              <li>Flujo web para seguimiento del torneo</li>
-              <li>Backend orientado a reglas del juego y control operativo</li>
+              <li data-i18n="milaFeature1">Prediction pool and participant management</li>
+              <li data-i18n="milaFeature2">Web flow for tournament tracking</li>
+              <li data-i18n="milaFeature3">Backend for game rules and operational control</li>
             </ul>
             <ul class="tag-list">
               <li>Node.js</li>
@@ -314,17 +289,14 @@
           <article class="project-card reveal">
             <div class="project-topline">
               <span class="project-role">Freelance</span>
-              <span class="project-metric">Full-stack a medida</span>
+              <span class="project-metric" data-i18n="customFullStack">Custom full-stack</span>
             </div>
             <h3>Natural-hair.mx</h3>
-            <p>
-              Arquitectura y desarrollo de un sitio de catálogo dinámico para la industria de belleza, trabajando
-              de cerca con el cliente para aterrizar requerimientos y asegurar una entrega alineada al negocio.
-            </p>
+            <p data-i18n="naturalHairBody">Architecture and development of a dynamic catalog website for the beauty industry, working closely with the client to define requirements and deliver a solution aligned with the business.</p>
             <ul class="feature-list">
-              <li>Catálogo de productos y buscador de ubicaciones</li>
-              <li>Sección de preguntas y respuestas</li>
-              <li>Base de datos SQL personalizada</li>
+              <li data-i18n="naturalHairFeature1">Product catalog and location finder</li>
+              <li data-i18n="naturalHairFeature2">Questions and answers section</li>
+              <li data-i18n="naturalHairFeature3">Custom SQL database</li>
             </ul>
             <ul class="tag-list">
               <li>PHP</li>
@@ -342,33 +314,26 @@
     <section id="experience" class="section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Trayectoria</p>
-          <h2>Experiencia profesional y formación técnica.</h2>
+          <p class="eyebrow" data-i18n="experienceEyebrow">Career</p>
+          <h2 data-i18n="experienceTitle">Professional experience and technical education.</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item current reveal">
-            <span class="timeline-year">Jun - Ago<br>2026</span>
+            <span class="timeline-year" data-i18n-html="jabilDates">Jun - Aug<br>2026</span>
             <div class="timeline-body">
               <h3>Summer Camp Intern · Test Engineering</h3>
-              <p class="timeline-meta">Jabil · Guadalajara, México</p>
-              <p>
-                Análisis de datos y desarrollo de software dentro del área de Test Engineering.
-                Construcción de dashboards en Power BI, diseño y mantenimiento de bases de datos,
-                y soporte técnico a procesos de prueba en manufactura.
-              </p>
+              <p class="timeline-meta" data-i18n="jabilLocation">Jabil · Guadalajara, Mexico</p>
+              <p data-i18n="jabilExperienceBody">Data analysis and software development within Test Engineering. Built Power BI dashboards, designed and maintained databases, and provided technical support for manufacturing test processes.</p>
             </div>
           </article>
 
           <article class="timeline-item reveal">
-            <span class="timeline-year">2020<br>Presente</span>
+            <span class="timeline-year" data-i18n-html="presentDates">2020<br>Present</span>
             <div class="timeline-body">
               <h3>Software Developer &amp; Pharmaceutical Chemist</h3>
-              <p class="timeline-meta">DermaSun · Zapopan, México</p>
-              <p>
-                Lidero iniciativas técnicas y operativas que van desde el desarrollo web hasta la mejora de
-                procesos y la implementación de infraestructura de seguridad.
-              </p>
+              <p class="timeline-meta" data-i18n="dermasunLocation">DermaSun · Zapopan, Mexico</p>
+              <p data-i18n="dermasunExperienceBody">I lead technical and operational initiatives ranging from web development to process improvement and the implementation of security infrastructure.</p>
             </div>
           </article>
 
@@ -376,29 +341,26 @@
             <span class="timeline-year">2025</span>
             <div class="timeline-body">
               <h3>Freelance Web Developer</h3>
-              <p class="timeline-meta">Natural-hair.mx · Cliente del sector belleza</p>
-              <p>
-                Diseñé y construí una solución web a medida, colaborando de forma directa con el cliente
-                durante todo el ciclo del proyecto.
-              </p>
+              <p class="timeline-meta" data-i18n="naturalHairMeta">Natural-hair.mx · Beauty industry client</p>
+              <p data-i18n="naturalHairExperienceBody">I designed and built a custom web solution, collaborating directly with the client throughout the project lifecycle.</p>
             </div>
           </article>
 
           <article class="timeline-item reveal">
             <span class="timeline-year">2023<br>2027</span>
             <div class="timeline-body">
-              <h3>Ingeniería en Desarrollo de Software</h3>
+              <h3 data-i18n="softwareEngineeringDegree">B.Eng. in Software Development</h3>
               <p class="timeline-meta">CETI Colomos</p>
-              <p>Formación actual enfocada en desarrollo de software y resolución de problemas técnicos.</p>
+              <p data-i18n="softwareEducationBody">Current education focused on software development and technical problem-solving.</p>
             </div>
           </article>
 
           <article class="timeline-item reveal">
             <span class="timeline-year">2019<br>2022</span>
             <div class="timeline-body">
-              <h3>Tecnólogo en Química Farmacéutica</h3>
+              <h3 data-i18n="chemistryDegree">Technologist in Pharmaceutical Chemistry</h3>
               <p class="timeline-meta">CETI Colomos</p>
-              <p>Base científica y metodológica que hoy aplico en entornos de software, calidad y operaciones.</p>
+              <p data-i18n="chemistryEducationBody">A scientific and methodological foundation that I now apply in software, quality, and operations environments.</p>
             </div>
           </article>
         </div>
@@ -409,13 +371,13 @@
     <section id="skills" class="section section-alt">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Habilidades y certificaciones</p>
-          <h2>Stack técnico, herramientas profesionales y aprendizaje continuo.</h2>
+          <p class="eyebrow" data-i18n="skillsEyebrow">Skills and certifications</p>
+          <h2 data-i18n="skillsTitle">Technical stack, professional tools, and continuous learning.</h2>
         </div>
 
         <div class="skills-layout">
           <article class="skills-card reveal">
-            <h3>Técnicas</h3>
+            <h3 data-i18n="technicalSkills">Technical</h3>
             <ul class="tag-list">
               <li>Python</li>
               <li>Power BI / Power Query</li>
@@ -434,7 +396,7 @@
           </article>
 
           <article class="skills-card reveal">
-            <h3>Profesionales</h3>
+            <h3 data-i18n="professionalSkills">Professional</h3>
             <ul class="tag-list">
               <li>Data Analysis</li>
               <li>Dashboard Development</li>
@@ -443,12 +405,12 @@
               <li>Team Leadership</li>
               <li>Analytical Thinking</li>
               <li>Client Collaboration</li>
-              <li>Presentaciones de alto impacto</li>
+              <li data-i18n="highImpactPresentations">High-impact presentations</li>
             </ul>
           </article>
 
           <article class="skills-card reveal">
-            <h3>Certificaciones</h3>
+            <h3 data-i18n="certifications">Certifications</h3>
             <ul class="plain-list">
               <li>Power BI Intermediate: Data Analysis and Modeling · Santander Open Academy · Jun 2026</li>
               <li>Power BI Fundamentals · Santander Open Academy · Jun 2026</li>
@@ -461,12 +423,12 @@
           </article>
 
           <article class="skills-card reveal">
-            <h3>Idiomas</h3>
+            <h3 data-i18n="languages">Languages</h3>
             <ul class="plain-list">
-              <li>Español · Nativo</li>
-              <li>Inglés · C1 certificado</li>
-              <li>Francés · A2 (principiante intermedio)</li>
-              <li>Italiano · A2 (principiante intermedio)</li>
+              <li data-i18n="spanishLevel">Spanish · Native</li>
+              <li data-i18n="englishCertified">English · Certified C1</li>
+              <li data-i18n="frenchLevel">French · A2 (elementary)</li>
+              <li data-i18n="italianLevel">Italian · A2 (elementary)</li>
             </ul>
           </article>
         </div>
@@ -478,18 +440,15 @@
   <footer id="contact" class="site-footer">
     <div class="container footer-grid">
       <div class="footer-copy reveal">
-        <p class="eyebrow">Contacto</p>
-        <h2>Disponible para colaborar en proyectos donde la ejecución importe.</h2>
-        <p>
-          Si buscas a alguien que combine criterio técnico, disciplina operativa y una forma clara
-          de comunicar avances, conversemos.
-        </p>
+        <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+        <h2 data-i18n="contactTitle">Available to collaborate on projects where execution matters.</h2>
+        <p data-i18n="contactBody">If you are looking for someone who combines technical judgment, operational discipline, and clear communication, let's connect.</p>
       </div>
 
       <div class="contact-card reveal">
         <a href="mailto:santiagor.orozco@gmail.com">santiagor.orozco@gmail.com</a>
         <a href="tel:+523322979723">+52 33 2297 9723</a>
-        <p>Zapopan, Jalisco, México</p>
+        <p data-i18n="contactLocation">Zapopan, Jalisco, Mexico</p>
         <a href="https://github.com/a23310173" target="_blank" rel="noreferrer">github.com/a23310173</a>
         <a href="https://www.ozctech.net" target="_blank" rel="noreferrer">www.ozctech.net</a>
         <a href="https://www.dermasun.net" target="_blank" rel="noreferrer">www.dermasun.net</a>

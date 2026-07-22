@@ -10,6 +10,180 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ──────────────────────────────────────────────────────────
+     LANGUAGE SELECTOR
+     English is the source language in the HTML; Spanish copy is
+     applied client-side and the visitor's preference is remembered.
+     ────────────────────────────────────────────────────────── */
+  const translations = {
+    es: {
+      homeLabel: 'Inicio',
+      profileAlt: 'Foto de Santiago Ramirez Orozco',
+      mainNavigation: 'Navegación principal',
+      navAbout: 'Perfil',
+      navProjects: 'Proyectos',
+      navExperience: 'Experiencia',
+      navSkills: 'Habilidades',
+      navContact: 'Contacto',
+      viewCv: 'Ver CV',
+      openMenu: 'Abrir menú',
+      heroTitle: 'Construyo software claro<br>para <em>problemas reales.</em>',
+      heroSummary: 'Desarrollador con formación en química farmacéutica y experiencia en análisis de datos, desarrollo web y mejora de procesos. Actualmente en Jabil apoyando al área de Test Engineering con dashboards, bases de datos y soluciones de software orientadas a operaciones.',
+      keyFacts: 'Datos clave',
+      englishLevel: 'Inglés C1',
+      availableDate: 'Disponible ago. 2026',
+      exploreProjects: 'Explorar proyectos',
+      contactAction: 'Contactar',
+      activeInternship: 'Internship activo',
+      provenImpact: 'Impacto comprobado',
+      salesIncrease: 'incremento en ventas online · DermaSun',
+      aboutEyebrow: 'Perfil',
+      aboutTitle: 'Un perfil híbrido entre software, datos y ejecución operativa.',
+      aboutDataTitle: 'Datos y desarrollo de software',
+      aboutDataBody: 'Analizo datos de procesos de manufactura y desarrollo herramientas como dashboards en Power BI y bases de datos SQL para que los equipos tomen mejores decisiones con información clara y accionable.',
+      aboutWebTitle: 'Desarrollo web con foco en negocio',
+      aboutWebBody: 'He trabajado en sitios web, catálogos dinámicos y relanzamientos digitales con una mentalidad orientada a resultados: más conversión, mejor operación y una experiencia más clara para el usuario.',
+      aboutOperationsTitle: 'Precisión operativa y colaboración',
+      aboutOperationsBody: 'Mi formación en química farmacéutica me dio disciplina y documentación rigurosa. He coordinado proyectos técnicos y colaborado directamente con clientes desde el requerimiento hasta la entrega.',
+      projectsEyebrow: 'Proyectos destacados',
+      projectsTitle: 'Trabajo enfocado en impacto, no solo en implementación.',
+      jabilProjectTitle: 'Dashboards y bases de datos para manufactura',
+      jabilProjectBody: 'Análisis de datos de procesos de prueba y desarrollo de herramientas de software para el área de Test Engineering, apoyando la toma de decisiones con datos visuales y estructurados.',
+      jabilFeature1: 'Dashboards operativos en Power BI',
+      jabilFeature2: 'Diseño y mantenimiento de bases de datos',
+      jabilFeature3: 'Automatización de reportes de proceso',
+      onlineSalesMetric: '+200% ventas online',
+      dermasunProjectTitle: 'Relanzamiento de e-commerce y presencia digital',
+      dermasunProjectBody: 'Desarrollé y relancé la plataforma de comercio electrónico de la empresa, mejorando el canal online y apoyando la actualización continua del sitio y redes sociales.',
+      dermasunFeature1: 'Relanzamiento completo del sitio',
+      dermasunFeature2: 'Soporte a la operación digital de la marca',
+      dermasunFeature3: 'Enfoque en resultados comerciales medibles',
+      internalErp: 'ERP interno',
+      dermasunAppBody: 'Sistema de gestión empresarial para dermasun.net enfocado en centralizar procesos internos y facilitar la administración operativa del negocio.',
+      dermasunAppFeature1: 'Gestión interna de procesos empresariales',
+      dermasunAppFeature2: 'Soporte a operación y seguimiento de información',
+      dermasunAppFeature3: 'Desarrollo orientado a necesidades reales del negocio',
+      personalWebsite: 'Sitio web profesional',
+      ozctechBody: 'Sitio de mi operación personal y profesional para presentar servicios, proyectos, identidad digital y un punto de contacto con clientes y colaboradores.',
+      ozctechFeature1: 'Presencia profesional y portafolio personal',
+      ozctechFeature2: 'Canal directo de contacto y presentación de servicios',
+      ozctechFeature3: 'Base para identidad digital y marca personal',
+      academicItsm: 'Académico / ITSM',
+      deployTrackBody: 'Sistema de gestión ITIL con dashboard de KPIs para dar visibilidad a incidencias, servicios y seguimiento operativo dentro de un flujo de soporte estructurado.',
+      deployTrackFeature1: 'Dashboard de indicadores para gestión de servicios',
+      deployTrackFeature2: 'Enfoque en procesos ITIL y trazabilidad',
+      deployTrackFeature3: 'Vista ejecutiva para seguimiento operativo',
+      milaBody: 'Web app en Node.js para administrar una quiniela del Mundial FIFA 2026, con gestión de participantes, partidos y dinámicas de seguimiento del torneo.',
+      milaFeature1: 'Administración de quiniela y participantes',
+      milaFeature2: 'Flujo web para seguimiento del torneo',
+      milaFeature3: 'Backend orientado a reglas del juego y control operativo',
+      customFullStack: 'Full-stack a medida',
+      naturalHairBody: 'Arquitectura y desarrollo de un sitio de catálogo dinámico para la industria de belleza, trabajando de cerca con el cliente para aterrizar requerimientos y asegurar una entrega alineada al negocio.',
+      naturalHairFeature1: 'Catálogo de productos y buscador de ubicaciones',
+      naturalHairFeature2: 'Sección de preguntas y respuestas',
+      naturalHairFeature3: 'Base de datos SQL personalizada',
+      experienceEyebrow: 'Trayectoria',
+      experienceTitle: 'Experiencia profesional y formación técnica.',
+      jabilDates: 'Jun - Ago<br>2026',
+      jabilLocation: 'Jabil · Guadalajara, México',
+      jabilExperienceBody: 'Análisis de datos y desarrollo de software dentro del área de Test Engineering. Construcción de dashboards en Power BI, diseño y mantenimiento de bases de datos, y soporte técnico a procesos de prueba en manufactura.',
+      presentDates: '2020<br>Presente',
+      dermasunLocation: 'DermaSun · Zapopan, México',
+      dermasunExperienceBody: 'Lidero iniciativas técnicas y operativas que van desde el desarrollo web hasta la mejora de procesos y la implementación de infraestructura de seguridad.',
+      naturalHairMeta: 'Natural-hair.mx · Cliente del sector belleza',
+      naturalHairExperienceBody: 'Diseñé y construí una solución web a medida, colaborando de forma directa con el cliente durante todo el ciclo del proyecto.',
+      softwareEngineeringDegree: 'Ingeniería en Desarrollo de Software',
+      softwareEducationBody: 'Formación actual enfocada en desarrollo de software y resolución de problemas técnicos.',
+      chemistryDegree: 'Tecnólogo en Química Farmacéutica',
+      chemistryEducationBody: 'Base científica y metodológica que hoy aplico en entornos de software, calidad y operaciones.',
+      skillsEyebrow: 'Habilidades y certificaciones',
+      skillsTitle: 'Stack técnico, herramientas profesionales y aprendizaje continuo.',
+      technicalSkills: 'Técnicas',
+      professionalSkills: 'Profesionales',
+      highImpactPresentations: 'Presentaciones de alto impacto',
+      certifications: 'Certificaciones',
+      languages: 'Idiomas',
+      spanishLevel: 'Español · Nativo',
+      englishCertified: 'Inglés · C1 certificado',
+      frenchLevel: 'Francés · A2 (principiante intermedio)',
+      italianLevel: 'Italiano · A2 (principiante intermedio)',
+      contactEyebrow: 'Contacto',
+      contactTitle: 'Disponible para colaborar en proyectos donde la ejecución importe.',
+      contactBody: 'Si buscas a alguien que combine criterio técnico, disciplina operativa y una forma clara de comunicar avances, conversemos.',
+      contactLocation: 'Zapopan, Jalisco, México',
+    },
+  };
+
+  const languageToggle = document.querySelector('.language-toggle');
+  const translatableText = [...document.querySelectorAll('[data-i18n]')];
+  const translatableHtml = [...document.querySelectorAll('[data-i18n-html]')];
+  const translatableLabels = [...document.querySelectorAll('[data-i18n-aria-label]')];
+  const translatableAlts = [...document.querySelectorAll('[data-i18n-alt]')];
+  const englishText = new Map(translatableText.map(el => [el, el.textContent]));
+  const englishHtml = new Map(translatableHtml.map(el => [el, el.innerHTML]));
+  const englishLabels = new Map(translatableLabels.map(el => [el, el.getAttribute('aria-label')]));
+  const englishAlts = new Map(translatableAlts.map(el => [el, el.getAttribute('alt')]));
+  const metaDescription = document.querySelector('meta[name="description"]');
+  const openGraphDescription = document.querySelector('meta[property="og:description"]');
+  const englishMetaDescription = metaDescription?.getAttribute('content');
+  const englishOpenGraphDescription = openGraphDescription?.getAttribute('content');
+
+  const setLanguage = (language) => {
+    const isSpanish = language === 'es';
+    const dictionary = translations.es;
+
+    translatableText.forEach(el => {
+      el.textContent = isSpanish ? dictionary[el.dataset.i18n] : englishText.get(el);
+    });
+    translatableHtml.forEach(el => {
+      el.innerHTML = isSpanish ? dictionary[el.dataset.i18nHtml] : englishHtml.get(el);
+    });
+    translatableLabels.forEach(el => {
+      el.setAttribute('aria-label', isSpanish ? dictionary[el.dataset.i18nAriaLabel] : englishLabels.get(el));
+    });
+    translatableAlts.forEach(el => {
+      el.setAttribute('alt', isSpanish ? dictionary[el.dataset.i18nAlt] : englishAlts.get(el));
+    });
+
+    document.documentElement.lang = language;
+    languageToggle?.setAttribute('aria-pressed', String(isSpanish));
+    languageToggle?.setAttribute('aria-label', isSpanish ? 'Cambiar idioma a inglés' : 'Switch language to Spanish');
+    languageToggle?.setAttribute('title', isSpanish ? 'Cambiar idioma a inglés' : 'Switch language to Spanish');
+    languageToggle?.querySelectorAll('[data-language]').forEach(option => {
+      option.classList.toggle('active', option.dataset.language === language);
+    });
+
+    if (metaDescription) {
+      metaDescription.setAttribute('content', isSpanish
+        ? 'Portafolio de Santiago Ramirez Orozco. Desarrollador de software con experiencia en análisis de datos, e-commerce, ciberseguridad y mejora de procesos operativos.'
+        : englishMetaDescription);
+    }
+    if (openGraphDescription) {
+      openGraphDescription.setAttribute('content', isSpanish
+        ? 'Análisis de datos, dashboards, desarrollo web y operaciones. Experiencia en Jabil, DermaSun y proyectos freelance.'
+        : englishOpenGraphDescription);
+    }
+
+    try {
+      localStorage.setItem('portfolio-language', language);
+    } catch (error) {
+      // The language switch still works when browser storage is unavailable.
+    }
+  };
+
+  let initialLanguage = 'en';
+  try {
+    initialLanguage = localStorage.getItem('portfolio-language') === 'es' ? 'es' : 'en';
+  } catch (error) {
+    // English remains the default when browser storage is unavailable.
+  }
+
+  setLanguage(initialLanguage);
+
+  languageToggle?.addEventListener('click', () => {
+    setLanguage(document.documentElement.lang === 'en' ? 'es' : 'en');
+  });
+
+  /* ──────────────────────────────────────────────────────────
      1. HERO INTERACTIVE DOT CANVAS
      Inspired by Cult UI canvas-fractal-grid.tsx
      Dot grid that scales outward from the mouse position

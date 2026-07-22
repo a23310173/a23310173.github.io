@@ -249,6 +249,51 @@ h1, h2, h3 {
   transform: scaleX(1);
 }
 
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 70px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--bg-white);
+  box-shadow: var(--shadow-sm);
+  color: var(--muted-light);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-spring);
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 3px 10px rgba(var(--accent-rgb), 0.14);
+  transform: translateY(-1px);
+}
+
+.language-toggle [data-language] {
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.language-toggle [data-language].active {
+  color: var(--accent-dark);
+}
+
+.language-divider {
+  width: 1px;
+  height: 13px;
+  background: var(--line-strong);
+}
+
 /* ============================================================
    BUTTONS — Clean, tactile, precise
    ============================================================ */
@@ -1097,6 +1142,8 @@ h1, h2, h3 {
     display: none;
   }
 
+  .language-toggle { margin-left: auto; }
+
   .mobile-menu-toggle {
     display: inline-flex;
     flex-direction: column;
@@ -1182,6 +1229,12 @@ h1, h2, h3 {
   .header-container { min-height: 68px; }
 
   .brand-copy span { display: none; }
+
+  .language-toggle {
+    min-width: 64px;
+    height: 34px;
+    padding: 0 8px;
+  }
 
   .hero-section { padding: 56px 0 72px; }
 
