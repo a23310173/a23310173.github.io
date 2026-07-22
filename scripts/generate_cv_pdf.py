@@ -282,6 +282,7 @@ def build_pdf():
 
     section("CERTIFICATES")
     certs = [
+        "Power BI Intermediate: Data Analysis and Modeling - Santander Open Academy - Jun 2026",
         "Power BI Fundamentals - Santander Open Academy - Jun 2026",
         "Speak Up Workshop - Jabil - Jun 2026",
         "ISO 27001 Workshop - 2024",
