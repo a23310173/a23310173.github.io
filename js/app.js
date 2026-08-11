@@ -27,15 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
       viewCv: 'Ver CV',
       openMenu: 'Abrir menú',
       heroTitle: 'Construyo software claro<br>para <em>problemas reales.</em>',
-      heroSummary: 'Desarrollador con formación en química farmacéutica y experiencia en análisis de datos, desarrollo web y mejora de procesos. Actualmente en Jabil apoyando al área de Test Engineering con dashboards, bases de datos y soluciones de software orientadas a operaciones.',
+      heroSummary: 'Software Engineer Intern en Jabil con experiencia en desarrollo y mantenimiento de aplicaciones, bases de datos, herramientas de reporting y automatización de procesos para Test Engineering. También desarrollo sistemas web orientados a negocio y soluciones de datos.',
       keyFacts: 'Datos clave',
       englishLevel: 'Inglés C1',
-      availableDate: 'Disponible ago. 2026',
+      availability: 'Abierto a proyectos freelance seleccionados',
       exploreProjects: 'Explorar proyectos',
       contactAction: 'Contactar',
-      activeInternship: 'Internship activo',
+      heroRole: 'Software Engineer Intern',
+      currentAtJabil: 'Actualmente en Jabil',
       provenImpact: 'Impacto comprobado',
-      salesIncrease: 'incremento en ventas online · DermaSun',
+      salesIncrease: 'incremento reportado por la empresa después del relanzamiento de e-commerce · DermaSun',
       aboutEyebrow: 'Perfil',
       aboutTitle: 'Un perfil híbrido entre software, datos y ejecución operativa.',
       aboutDataTitle: 'Datos y desarrollo de software',
@@ -46,19 +47,32 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutOperationsBody: 'Mi formación en química farmacéutica me dio disciplina y documentación rigurosa. He coordinado proyectos técnicos y colaborado directamente con clientes desde el requerimiento hasta la entrega.',
       projectsEyebrow: 'Proyectos destacados',
       projectsTitle: 'Trabajo enfocado en impacto, no solo en implementación.',
-      jabilProjectTitle: 'Dashboards y bases de datos para manufactura',
-      jabilProjectBody: 'Análisis de datos de procesos de prueba y desarrollo de herramientas de software para el área de Test Engineering, apoyando la toma de decisiones con datos visuales y estructurados.',
+      confidentialProject: 'Proyecto confidencial',
+      jabilProjectTitle: 'Dashboard de KPIs de cliente · Test Engineering',
+      caseProblem: 'Problema',
+      caseRole: 'Mi responsabilidad',
+      caseOutcome: 'Resultado',
+      jabilProblem: 'La información de procesos de prueba necesitaba mayor claridad y visibilidad de KPIs para la toma de decisiones.',
+      jabilRole: 'Desarrollo y mantengo aplicaciones, bases de datos, herramientas de reporting, documentación y automatización de procesos para Test Engineering.',
+      jabilOutcome: 'Centralización de reportes y mayor visibilidad de indicadores operativos, respetando los requisitos de confidencialidad.',
       jabilFeature1: 'Dashboards operativos en Power BI',
       jabilFeature2: 'Diseño y mantenimiento de bases de datos',
       jabilFeature3: 'Automatización de reportes de proceso',
       onlineSalesMetric: '+200% ventas online',
-      dermasunProjectTitle: 'Relanzamiento de e-commerce y presencia digital',
-      dermasunProjectBody: 'Desarrollé y relancé la plataforma de comercio electrónico de la empresa, mejorando el canal online y apoyando la actualización continua del sitio y redes sociales.',
+      dermasunProjectTitle: 'Landing page de dermasun.net y relanzamiento de e-commerce',
+      dermasunProblem: 'El canal online de la empresa necesitaba un relanzamiento técnico y comercial completo.',
+      dermasunRole: 'Diseñé y desarrollé una landing page responsive de productos con catálogo por categorías, fichas, Quiz FPS y flujo de cotización/contacto.',
+      dermasunOutcome: 'Incremento de 200% en ventas online reportado por la empresa después del relanzamiento de e-commerce.',
       dermasunFeature1: 'Relanzamiento completo del sitio',
       dermasunFeature2: 'Soporte a la operación digital de la marca',
       dermasunFeature3: 'Enfoque en resultados comerciales medibles',
       internalErp: 'ERP interno',
-      dermasunAppBody: 'Sistema de gestión empresarial para dermasun.net enfocado en centralizar procesos internos y facilitar la administración operativa del negocio.',
+      dermasunAppProblem: 'La información interna y los flujos operativos necesitaban un sistema centralizado.',
+      dermasunAppRole: 'Diseñé y desarrollé una plataforma de gestión empresarial basada en las necesidades operativas diarias.',
+      dermasunAppOutcome: 'Una sola plataforma para gestionar procesos, dar seguimiento a información y controlar la operación.',
+      openSystem: 'Abrir sistema',
+      viewCode: 'Ver código',
+      visitWebsite: 'Visitar sitio',
       dermasunAppFeature1: 'Gestión interna de procesos empresariales',
       dermasunAppFeature2: 'Soporte a operación y seguimiento de información',
       dermasunAppFeature3: 'Desarrollo orientado a necesidades reales del negocio',
@@ -68,29 +82,39 @@ document.addEventListener('DOMContentLoaded', () => {
       ozctechFeature2: 'Canal directo de contacto y presentación de servicios',
       ozctechFeature3: 'Base para identidad digital y marca personal',
       academicItsm: 'Académico / ITSM',
-      deployTrackBody: 'Sistema de gestión ITIL con dashboard de KPIs para dar visibilidad a incidencias, servicios y seguimiento operativo dentro de un flujo de soporte estructurado.',
+      deployTrackProblem: 'Los flujos de servicios de TI necesitaban trazabilidad y una vista ejecutiva más clara del desempeño.',
+      deployTrackRole: 'Desarrollé un sistema de gestión orientado a ITIL y un dashboard de KPIs.',
+      deployTrackOutcome: 'Seguimiento unificado de incidencias, servicios y KPIs dentro de un flujo operativo estructurado.',
+      openProject: 'Abrir proyecto',
+      openApp: 'Abrir app',
+      otherProjects: 'Otros proyectos',
+      otherProjectsIntro: 'Productos web, trabajo freelance y plataformas profesionales adicionales.',
       deployTrackFeature1: 'Dashboard de indicadores para gestión de servicios',
       deployTrackFeature2: 'Enfoque en procesos ITIL y trazabilidad',
       deployTrackFeature3: 'Vista ejecutiva para seguimiento operativo',
-      milaBody: 'Web app en Node.js para administrar una quiniela del Mundial FIFA 2026, con gestión de participantes, partidos y dinámicas de seguimiento del torneo.',
-      milaFeature1: 'Administración de quiniela y participantes',
-      milaFeature2: 'Flujo web para seguimiento del torneo',
-      milaFeature3: 'Backend orientado a reglas del juego y control operativo',
+      personalAnalytics: 'Analítica personal',
+      liTrackBody: 'Web app de KPIs personales que convierte tiempo, sueño, tráfico, enfoque, actividades, citas, ideas y metas en insights diarios y semanales.',
       customFullStack: 'Full-stack a medida',
       naturalHairBody: 'Arquitectura y desarrollo de un sitio de catálogo dinámico para la industria de belleza, trabajando de cerca con el cliente para aterrizar requerimientos y asegurar una entrega alineada al negocio.',
       naturalHairFeature1: 'Catálogo de productos y buscador de ubicaciones',
       naturalHairFeature2: 'Sección de preguntas y respuestas',
       naturalHairFeature3: 'Base de datos SQL personalizada',
-      experienceEyebrow: 'Trayectoria',
-      experienceTitle: 'Experiencia profesional y formación técnica.',
-      jabilDates: 'Jun - Ago<br>2026',
-      jabilLocation: 'Jabil · Guadalajara, México',
-      jabilExperienceBody: 'Análisis de datos y desarrollo de software dentro del área de Test Engineering. Construcción de dashboards en Power BI, diseño y mantenimiento de bases de datos, y soporte técnico a procesos de prueba en manufactura.',
+      experienceEyebrow: 'Experiencia',
+      experienceTitle: 'Trabajo profesional en software, datos y operaciones.',
+      jabilDates: 'Jun 2026<br>Presente',
+      jabilJobTitle: 'Software Engineer Intern · Test Engineering',
+      jabilLocation: 'Jabil · Zapopan, México',
+      jabilExperienceBody: 'Promovido desde Software Summer Intern después de recibir una extensión de siete meses. Desarrollo y mantengo aplicaciones desde el levantamiento de requerimientos hasta la implementación de funciones y corrección de defectos, incluyendo bases de datos, reporting, documentación y automatización de procesos.',
       presentDates: '2020<br>Presente',
+      dermasunDates: 'Feb 2020<br>Presente',
+      dermasunJobTitle: 'Desarrollador de Software y Operaciones',
       dermasunLocation: 'DermaSun · Zapopan, México',
-      dermasunExperienceBody: 'Lidero iniciativas técnicas y operativas que van desde el desarrollo web hasta la mejora de procesos y la implementación de infraestructura de seguridad.',
+      dermasunExperienceBody: 'Lidero iniciativas técnicas y operativas de e-commerce, sistemas empresariales internos, mejora de procesos e infraestructura de seguridad.',
       naturalHairMeta: 'Natural-hair.mx · Cliente del sector belleza',
       naturalHairExperienceBody: 'Diseñé y construí una solución web a medida, colaborando de forma directa con el cliente durante todo el ciclo del proyecto.',
+      educationEyebrow: 'Educación',
+      educationTitle: 'Formación técnica con una base multidisciplinaria.',
+      softwareEducationDates: 'Ago 2023 - Ago 2027',
       softwareEngineeringDegree: 'Ingeniería en Desarrollo de Software',
       softwareEducationBody: 'Formación actual enfocada en desarrollo de software y resolución de problemas técnicos.',
       chemistryDegree: 'Tecnólogo en Química Farmacéutica',
@@ -99,8 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
       skillsTitle: 'Stack técnico, herramientas profesionales y aprendizaje continuo.',
       technicalSkills: 'Técnicas',
       professionalSkills: 'Profesionales',
-      highImpactPresentations: 'Presentaciones de alto impacto',
-      certifications: 'Certificaciones',
+      stakeholderCommunication: 'Comunicación con stakeholders',
+      certifications: 'Certificaciones y capacitaciones',
       languages: 'Idiomas',
       spanishLevel: 'Español · Nativo',
       englishCertified: 'Inglés · C1 certificado',
@@ -123,7 +147,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const englishLabels = new Map(translatableLabels.map(el => [el, el.getAttribute('aria-label')]));
   const englishAlts = new Map(translatableAlts.map(el => [el, el.getAttribute('alt')]));
   const metaDescription = document.querySelector('meta[name="description"]');
+  const openGraphTitle = document.querySelector('meta[property="og:title"]');
   const openGraphDescription = document.querySelector('meta[property="og:description"]');
+  const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+  const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+  const englishTitle = document.title;
   const englishMetaDescription = metaDescription?.getAttribute('content');
   const englishOpenGraphDescription = openGraphDescription?.getAttribute('content');
 
@@ -145,6 +173,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.documentElement.lang = language;
+    document.title = isSpanish
+      ? 'Santiago Ramirez Orozco | Portafolio de Desarrollo de Software'
+      : englishTitle;
+    openGraphTitle?.setAttribute('content', document.title);
     languageToggle?.setAttribute('aria-pressed', String(isSpanish));
     languageToggle?.setAttribute('aria-label', isSpanish ? 'Cambiar idioma a inglés' : 'Switch language to Spanish');
     languageToggle?.setAttribute('title', isSpanish ? 'Cambiar idioma a inglés' : 'Switch language to Spanish');
@@ -159,6 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (openGraphDescription) {
       openGraphDescription.setAttribute('content', isSpanish
+        ? 'Análisis de datos, dashboards, desarrollo web y operaciones. Experiencia en Jabil, DermaSun y proyectos freelance.'
+        : englishOpenGraphDescription);
+    }
+    if (twitterTitle) {
+      twitterTitle.setAttribute('content', document.title);
+    }
+    if (twitterDescription) {
+      twitterDescription.setAttribute('content', isSpanish
         ? 'Análisis de datos, dashboards, desarrollo web y operaciones. Experiencia en Jabil, DermaSun y proyectos freelance.'
         : englishOpenGraphDescription);
     }

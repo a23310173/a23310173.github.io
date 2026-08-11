@@ -9,8 +9,13 @@
   <meta property="og:title" content="Santiago Ramirez Orozco | Software Developer Portfolio">
   <meta property="og:type" content="website">
   <meta property="og:description" content="Data analysis, dashboards, web development, and operations. Experience at Jabil, DermaSun, and freelance projects.">
-  <meta property="og:image" content="img/cover.png">
-  <meta property="og:url" content="https://a23310173.github.io/">
+  <meta property="og:image" content="https://santiago-orozco.me/img/cover.png">
+  <meta property="og:url" content="https://santiago-orozco.me/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Santiago Ramirez Orozco | Software Developer Portfolio">
+  <meta name="twitter:description" content="Data analysis, dashboards, web development, and operations. Experience at Jabil, DermaSun, and freelance projects.">
+  <meta name="twitter:image" content="https://santiago-orozco.me/img/cover.png">
+  <link rel="canonical" href="https://santiago-orozco.me/">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -27,7 +32,7 @@
   <header class="site-header">
     <div class="container header-container">
       <a class="brand" href="#home" aria-label="Home" data-i18n-aria-label="homeLabel">
-        <img src="img/profile.png" alt="Portrait of Santiago Ramirez Orozco" class="profile-logo" data-i18n-alt="profileAlt">
+        <span class="profile-logo profile-monogram" aria-hidden="true">SR</span>
         <span class="brand-copy">
           <strong>Santiago Ramirez Orozco</strong>
           <span>Software Developer</span>
@@ -88,13 +93,13 @@
         <div class="hero-copy reveal">
           <span class="hero-name">Santiago Ramirez Orozco</span>
           <h1 data-i18n-html="heroTitle">I build clear software<br>for <em>real-world problems.</em></h1>
-          <p class="hero-summary" data-i18n="heroSummary">Software developer with a background in pharmaceutical chemistry and experience in data analysis, web development, and process improvement. Currently at Jabil, supporting Test Engineering with dashboards, databases, and operations-focused software solutions.</p>
+          <p class="hero-summary" data-i18n="heroSummary">Software Engineer Intern at Jabil with experience developing and maintaining applications, databases, reporting tools, and process automation for Test Engineering. I also build business-focused web systems and data solutions.</p>
 
           <div class="hero-tags" aria-label="Key facts" data-i18n-aria-label="keyFacts">
             <span class="featured">Jabil · Test Engineering</span>
             <span>Zapopan, Jalisco</span>
             <span data-i18n="englishLevel">English C1</span>
-            <span data-i18n="availableDate">Available Aug. 2026</span>
+            <span data-i18n="availability">Open to selected freelance projects</span>
           </div>
 
           <div class="hero-actions">
@@ -105,12 +110,12 @@
 
         <aside class="hero-panel reveal">
           <div class="hero-profile-card">
-            <img src="img/profile.png" alt="Portrait of Santiago Ramirez Orozco" class="hero-profile-img" data-i18n-alt="profileAlt">
+            <span class="hero-profile-img profile-monogram" aria-hidden="true">SRO</span>
             <p class="hero-profile-name">Santiago Ramirez Orozco</p>
-            <p class="hero-profile-role">Software Developer</p>
+            <p class="hero-profile-role" data-i18n="heroRole">Software Engineer Intern</p>
             <div class="hero-status-badge">
               <span class="hero-status-dot"></span>
-              <span data-i18n="activeInternship">Active internship</span>
+              <span data-i18n="currentAtJabil">Currently at Jabil</span>
             </div>
           </div>
 
@@ -118,7 +123,7 @@
             <span class="panel-label" data-i18n="provenImpact">Proven impact</span>
             <!-- Animated counter — Cult UI animated-number spring physics, vanilla JS -->
             <strong>+<span id="stat-counter" data-target="200" aria-label="200">0</span>%</strong>
-            <span class="stat-desc" data-i18n="salesIncrease">increase in online sales · DermaSun</span>
+            <span class="stat-desc" data-i18n="salesIncrease">company-reported increase after the e-commerce relaunch · DermaSun</span>
           </div>
         </aside>
 
@@ -160,19 +165,18 @@
           <h2 data-i18n="projectsTitle">Work focused on impact, not just implementation.</h2>
         </div>
 
-        <div class="projects-grid">
-          <article class="project-card reveal">
+        <div class="projects-grid projects-featured-grid">
+          <article class="project-card project-card-featured reveal">
             <div class="project-topline">
               <span class="project-role">Jabil</span>
-              <span class="project-metric">Test Engineering</span>
+              <span class="project-metric" data-i18n="confidentialProject">Confidential project</span>
             </div>
-            <h3 data-i18n="jabilProjectTitle">Dashboards and databases for manufacturing</h3>
-            <p data-i18n="jabilProjectBody">Analysis of testing process data and development of software tools for Test Engineering, supporting decision-making with visual and structured data.</p>
-            <ul class="feature-list">
-              <li data-i18n="jabilFeature1">Operational dashboards in Power BI</li>
-              <li data-i18n="jabilFeature2">Database design and maintenance</li>
-              <li data-i18n="jabilFeature3">Process report automation</li>
-            </ul>
+            <h3 data-i18n="jabilProjectTitle">Customer KPI dashboard · Test Engineering</h3>
+            <dl class="case-study-list">
+              <div><dt data-i18n="caseProblem">Problem</dt><dd data-i18n="jabilProblem">Test-process information needed clearer, decision-ready KPI visibility.</dd></div>
+              <div><dt data-i18n="caseRole">My role</dt><dd data-i18n="jabilRole">Develop and maintain applications, databases, reporting tools, documentation, and process automation for Test Engineering.</dd></div>
+              <div><dt data-i18n="caseOutcome">Outcome</dt><dd data-i18n="jabilOutcome">Centralized reporting and improved visibility into operational indicators while respecting confidentiality requirements.</dd></div>
+            </dl>
             <ul class="tag-list">
               <li>Power BI</li>
               <li>SQL</li>
@@ -181,46 +185,94 @@
             </ul>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card project-card-featured reveal">
             <div class="project-topline">
               <span class="project-role">DermaSun</span>
               <span class="project-metric" data-i18n="onlineSalesMetric">+200% online sales</span>
             </div>
-            <h3 data-i18n="dermasunProjectTitle">E-commerce relaunch and digital presence</h3>
-            <p data-i18n="dermasunProjectBody">I developed and relaunched the company's e-commerce platform, strengthening its online channel and supporting ongoing website and social media updates.</p>
-            <ul class="feature-list">
-              <li data-i18n="dermasunFeature1">Complete website relaunch</li>
-              <li data-i18n="dermasunFeature2">Support for the brand's digital operations</li>
-              <li data-i18n="dermasunFeature3">Focus on measurable business results</li>
-            </ul>
+            <h3 data-i18n="dermasunProjectTitle">dermasun.net landing page &amp; e-commerce relaunch</h3>
+            <dl class="case-study-list">
+              <div><dt data-i18n="caseProblem">Problem</dt><dd data-i18n="dermasunProblem">The company's online channel needed a complete technical and commercial relaunch.</dd></div>
+              <div><dt data-i18n="caseRole">My role</dt><dd data-i18n="dermasunRole">Designed and developed a responsive product landing page with category catalog, product pages, SPF quiz, and quote/contact flow.</dd></div>
+              <div><dt data-i18n="caseOutcome">Outcome</dt><dd data-i18n="dermasunOutcome">Company-reported 200% increase in online sales following the e-commerce relaunch.</dd></div>
+            </dl>
             <ul class="tag-list">
               <li>PHP</li>
               <li>SQL</li>
               <li>HTML/CSS</li>
               <li>E-commerce</li>
             </ul>
-            <a href="https://www.dermasun.net" target="_blank" rel="noreferrer" class="project-link">dermasun.net &rarr;</a>
+            <a href="https://www.dermasun.net" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="visitWebsite">Visit website</span> &rarr;</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card project-card-featured reveal">
             <div class="project-topline">
               <span class="project-role">DermaSun</span>
               <span class="project-metric" data-i18n="internalErp">Internal ERP</span>
             </div>
             <h3>app.dermasun.net</h3>
-            <p data-i18n="dermasunAppBody">Business management system for dermasun.net focused on centralizing internal processes and simplifying day-to-day operations.</p>
-            <ul class="feature-list">
-              <li data-i18n="dermasunAppFeature1">Internal business process management</li>
-              <li data-i18n="dermasunAppFeature2">Operational support and information tracking</li>
-              <li data-i18n="dermasunAppFeature3">Development driven by real business needs</li>
-            </ul>
+            <dl class="case-study-list">
+              <div><dt data-i18n="caseProblem">Problem</dt><dd data-i18n="dermasunAppProblem">Internal information and operational workflows needed a centralized system.</dd></div>
+              <div><dt data-i18n="caseRole">My role</dt><dd data-i18n="dermasunAppRole">Designed and developed a business management platform around day-to-day operational needs.</dd></div>
+              <div><dt data-i18n="caseOutcome">Outcome</dt><dd data-i18n="dermasunAppOutcome">A single platform for process management, information tracking, and operational follow-up.</dd></div>
+            </dl>
             <ul class="tag-list">
               <li>PHP</li>
               <li>MySQL</li>
               <li>JavaScript</li>
               <li>Business Systems</li>
             </ul>
-            <a href="https://app.dermasun.net" target="_blank" rel="noreferrer" class="project-link">app.dermasun.net &rarr;</a>
+            <div class="project-links">
+              <a href="https://app.dermasun.net" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="openSystem">Open system</span> &rarr;</a>
+              <a href="https://github.com/a23310173/DermaSun_App" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="viewCode">View code</span> &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-featured reveal">
+            <div class="project-topline">
+              <span class="project-role" data-i18n="academicItsm">Academic / ITSM</span>
+              <span class="project-metric">KPIs + ITIL</span>
+            </div>
+            <h3>DeployTrack.store</h3>
+            <dl class="case-study-list">
+              <div><dt data-i18n="caseProblem">Problem</dt><dd data-i18n="deployTrackProblem">IT service workflows needed traceability and a clearer executive view of performance.</dd></div>
+              <div><dt data-i18n="caseRole">My role</dt><dd data-i18n="deployTrackRole">Developed an ITIL-oriented management system and KPI dashboard.</dd></div>
+              <div><dt data-i18n="caseOutcome">Outcome</dt><dd data-i18n="deployTrackOutcome">Unified incident, service, and KPI tracking in a structured operational workflow.</dd></div>
+            </dl>
+            <ul class="tag-list">
+              <li>Node.js</li>
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>MongoDB Atlas</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://deploytrack.store" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="openProject">Open project</span> &rarr;</a>
+              <a href="https://github.com/a23310173/gestion-de-servicios-de-ti-proyecto-final" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="viewCode">View code</span> &rarr;</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="other-projects-heading reveal">
+          <p class="eyebrow" data-i18n="otherProjects">Other projects</p>
+          <p data-i18n="otherProjectsIntro">Additional web products, freelance work, and professional platforms.</p>
+        </div>
+
+        <div class="projects-grid other-projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-role" data-i18n="personalAnalytics">Personal analytics</span>
+              <span class="project-metric">Mobile-first PWA</span>
+            </div>
+            <h3>LiTRACK</h3>
+            <p data-i18n="liTrackBody">Personal KPI web app that turns time, sleep, traffic, focus, activities, appointments, ideas, and goals into daily and weekly insights.</p>
+            <ul class="tag-list">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>JavaScript</li>
+              <li>PWA</li>
+            </ul>
+            <a href="https://litrack.site/login" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="openApp">Open app</span> &rarr;</a>
           </article>
 
           <article class="project-card reveal">
@@ -230,60 +282,12 @@
             </div>
             <h3>OZCTECH.net / ozctech.com.mx</h3>
             <p data-i18n="ozctechBody">My personal and professional platform for presenting services, projects, digital identity, and a point of contact for clients and collaborators.</p>
-            <ul class="feature-list">
-              <li data-i18n="ozctechFeature1">Professional presence and personal portfolio</li>
-              <li data-i18n="ozctechFeature2">Direct contact and service presentation channel</li>
-              <li data-i18n="ozctechFeature3">Foundation for digital identity and personal brand</li>
-            </ul>
             <ul class="tag-list">
               <li>HTML/CSS</li>
               <li>JavaScript</li>
               <li>Brand Presence</li>
-              <li>Portfolio</li>
             </ul>
-            <a href="https://www.ozctech.net" target="_blank" rel="noreferrer" class="project-link">ozctech.net &rarr;</a>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span class="project-role" data-i18n="academicItsm">Academic / ITSM</span>
-              <span class="project-metric">KPIs + ITIL</span>
-            </div>
-            <h3>DeployTrack.store</h3>
-            <p data-i18n="deployTrackBody">ITIL management system with a KPI dashboard that provides visibility into incidents, services, and operational tracking within a structured support workflow.</p>
-            <ul class="feature-list">
-              <li data-i18n="deployTrackFeature1">Service management KPI dashboard</li>
-              <li data-i18n="deployTrackFeature2">ITIL processes and traceability</li>
-              <li data-i18n="deployTrackFeature3">Executive view for operational tracking</li>
-            </ul>
-            <ul class="tag-list">
-              <li>Node.js</li>
-              <li>Angular</li>
-              <li>TypeScript</li>
-              <li>MongoDB Atlas</li>
-            </ul>
-            <a href="https://deploytrack.store" target="_blank" rel="noreferrer" class="project-link">deploytrack.store &rarr;</a>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span class="project-role">Node.js</span>
-              <span class="project-metric">FIFA 2026</span>
-            </div>
-            <h3>Milaquiniela.site</h3>
-            <p data-i18n="milaBody">Node.js web app for managing a FIFA World Cup 2026 prediction pool, including participants, matches, and tournament tracking.</p>
-            <ul class="feature-list">
-              <li data-i18n="milaFeature1">Prediction pool and participant management</li>
-              <li data-i18n="milaFeature2">Web flow for tournament tracking</li>
-              <li data-i18n="milaFeature3">Backend for game rules and operational control</li>
-            </ul>
-            <ul class="tag-list">
-              <li>Node.js</li>
-              <li>JavaScript</li>
-              <li>MySQL</li>
-              <li>Web App</li>
-            </ul>
-            <a href="https://milaquiniela.site" target="_blank" rel="noreferrer" class="project-link">milaquiniela.site &rarr;</a>
+            <a href="https://www.ozctech.net" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="visitWebsite">Visit website</span> &rarr;</a>
           </article>
 
           <article class="project-card reveal">
@@ -293,18 +297,13 @@
             </div>
             <h3>Natural-hair.mx</h3>
             <p data-i18n="naturalHairBody">Architecture and development of a dynamic catalog website for the beauty industry, working closely with the client to define requirements and deliver a solution aligned with the business.</p>
-            <ul class="feature-list">
-              <li data-i18n="naturalHairFeature1">Product catalog and location finder</li>
-              <li data-i18n="naturalHairFeature2">Questions and answers section</li>
-              <li data-i18n="naturalHairFeature3">Custom SQL database</li>
-            </ul>
             <ul class="tag-list">
               <li>PHP</li>
               <li>MySQL</li>
               <li>HTML/CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a href="https://natural-hair.mx" target="_blank" rel="noreferrer" class="project-link">natural-hair.mx &rarr;</a>
+            <a href="https://natural-hair.mx" target="_blank" rel="noreferrer" class="project-link"><span data-i18n="visitWebsite">Visit website</span> &rarr;</a>
           </article>
         </div>
       </div>
@@ -314,26 +313,26 @@
     <section id="experience" class="section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="experienceEyebrow">Career</p>
-          <h2 data-i18n="experienceTitle">Professional experience and technical education.</h2>
+          <p class="eyebrow" data-i18n="experienceEyebrow">Experience</p>
+          <h2 data-i18n="experienceTitle">Professional work across software, data, and operations.</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item current reveal">
-            <span class="timeline-year" data-i18n-html="jabilDates">Jun - Aug<br>2026</span>
+            <span class="timeline-year" data-i18n-html="jabilDates">Jun 2026<br>Present</span>
             <div class="timeline-body">
-              <h3>Summer Camp Intern · Test Engineering</h3>
-              <p class="timeline-meta" data-i18n="jabilLocation">Jabil · Guadalajara, Mexico</p>
-              <p data-i18n="jabilExperienceBody">Data analysis and software development within Test Engineering. Built Power BI dashboards, designed and maintained databases, and provided technical support for manufacturing test processes.</p>
+              <h3 data-i18n="jabilJobTitle">Software Engineer Intern · Test Engineering</h3>
+              <p class="timeline-meta" data-i18n="jabilLocation">Jabil · Zapopan, Mexico</p>
+              <p data-i18n="jabilExperienceBody">Promoted from Software Summer Intern after receiving a seven-month internship extension. Develop and maintain applications from requirements gathering through feature implementation and defect resolution, including databases, reporting, documentation, and process automation.</p>
             </div>
           </article>
 
           <article class="timeline-item reveal">
-            <span class="timeline-year" data-i18n-html="presentDates">2020<br>Present</span>
+            <span class="timeline-year" data-i18n-html="dermasunDates">Feb 2020<br>Present</span>
             <div class="timeline-body">
-              <h3>Software Developer &amp; Pharmaceutical Chemist</h3>
+              <h3 data-i18n="dermasunJobTitle">Software Developer &amp; Operations</h3>
               <p class="timeline-meta" data-i18n="dermasunLocation">DermaSun · Zapopan, Mexico</p>
-              <p data-i18n="dermasunExperienceBody">I lead technical and operational initiatives ranging from web development to process improvement and the implementation of security infrastructure.</p>
+              <p data-i18n="dermasunExperienceBody">Lead technical and operational initiatives spanning e-commerce, internal business systems, process improvement, and security infrastructure.</p>
             </div>
           </article>
 
@@ -346,23 +345,29 @@
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2023<br>2027</span>
-            <div class="timeline-body">
+        </div>
+
+        <div id="education" class="education-block">
+          <div class="section-heading education-heading reveal">
+            <p class="eyebrow" data-i18n="educationEyebrow">Education</p>
+            <h2 data-i18n="educationTitle">Technical education with a multidisciplinary foundation.</h2>
+          </div>
+
+          <div class="education-grid">
+            <article class="education-card reveal">
+              <span class="education-year" data-i18n="softwareEducationDates">Aug 2023 - Aug 2027</span>
               <h3 data-i18n="softwareEngineeringDegree">B.Eng. in Software Development</h3>
               <p class="timeline-meta">CETI Colomos</p>
               <p data-i18n="softwareEducationBody">Current education focused on software development and technical problem-solving.</p>
-            </div>
-          </article>
+            </article>
 
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2019<br>2022</span>
-            <div class="timeline-body">
+            <article class="education-card reveal">
+              <span class="education-year">2019 - 2022</span>
               <h3 data-i18n="chemistryDegree">Technologist in Pharmaceutical Chemistry</h3>
               <p class="timeline-meta">CETI Colomos</p>
               <p data-i18n="chemistryEducationBody">A scientific and methodological foundation that I now apply in software, quality, and operations environments.</p>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -390,8 +395,9 @@
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
-              <li>Cybersecurity</li>
-              <li>Network Installation</li>
+              <li>ISO 27001</li>
+              <li>Network Security</li>
+              <li>Network Configuration</li>
             </ul>
           </article>
 
@@ -400,21 +406,26 @@
             <ul class="tag-list">
               <li>Data Analysis</li>
               <li>Dashboard Development</li>
+              <li>Agile</li>
+              <li>Kanban</li>
               <li>Project Management</li>
               <li>Problem-Solving</li>
               <li>Team Leadership</li>
               <li>Analytical Thinking</li>
               <li>Client Collaboration</li>
-              <li data-i18n="highImpactPresentations">High-impact presentations</li>
+              <li data-i18n="stakeholderCommunication">Stakeholder Communication</li>
             </ul>
           </article>
 
           <article class="skills-card reveal">
-            <h3 data-i18n="certifications">Certifications</h3>
+            <h3 data-i18n="certifications">Certifications &amp; Training</h3>
             <ul class="plain-list">
+              <li>Project Management and Agile Methodology Fundamentals · Santander Open Academy · Aug 2026</li>
               <li>Power BI Intermediate: Data Analysis and Modeling · Santander Open Academy · Jun 2026</li>
               <li>Power BI Fundamentals · Santander Open Academy · Jun 2026</li>
               <li>Speak Up Workshop · Jabil · Jun 2026</li>
+              <li>Interactions with Healthcare Professionals (HCPs) &amp; Healthcare Organizations (HCOs) · Jabil Healthcare</li>
+              <li>U.S. Sunshine Act Requirements · Jabil Healthcare</li>
               <li>ISO 27001 Workshop</li>
               <li>Networking Devices and Initial Configuration · Cisco</li>
               <li>Networking Basics · Cisco</li>
@@ -447,7 +458,7 @@
 
       <div class="contact-card reveal">
         <a href="mailto:santiagor.orozco@gmail.com">santiagor.orozco@gmail.com</a>
-        <a href="tel:+523322979723">+52 33 2297 9723</a>
+        <a href="https://www.linkedin.com/in/santiagor-orozco/" target="_blank" rel="noreferrer">linkedin.com/in/santiagor-orozco</a>
         <p data-i18n="contactLocation">Zapopan, Jalisco, Mexico</p>
         <a href="https://github.com/a23310173" target="_blank" rel="noreferrer">github.com/a23310173</a>
         <a href="https://www.ozctech.net" target="_blank" rel="noreferrer">www.ozctech.net</a>

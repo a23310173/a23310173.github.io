@@ -31,8 +31,8 @@ def build_pdf():
         pagesize=A4,
         leftMargin=13 * mm,
         rightMargin=13 * mm,
-        topMargin=11 * mm,
-        bottomMargin=10 * mm,
+        topMargin=8 * mm,
+        bottomMargin=7 * mm,
         title="Santiago Ramirez Orozco CV",
         author="Santiago Ramirez Orozco",
     )
@@ -56,7 +56,7 @@ def build_pdf():
             parent=styles["BodyText"],
             fontName="Helvetica",
             fontSize=8.55,
-            leading=11.3,
+            leading=10.7,
             textColor=TEXT,
             alignment=TA_LEFT,
         )
@@ -67,7 +67,7 @@ def build_pdf():
             parent=styles["BodyText"],
             fontName="Helvetica",
             fontSize=8.0,
-            leading=10.4,
+            leading=9.8,
             textColor=MUTED,
             alignment=TA_LEFT,
         )
@@ -81,8 +81,8 @@ def build_pdf():
             leading=12.5,
             textColor=BLUE,
             alignment=TA_LEFT,
-            spaceAfter=2,
-            spaceBefore=2,
+            spaceAfter=1,
+            spaceBefore=1,
         )
     )
     styles.add(
@@ -124,7 +124,11 @@ def build_pdf():
             ],
             [
                 Paragraph("<b>E-mail:</b> <link href='mailto:santiagor.orozco@gmail.com'>santiagor.orozco@gmail.com</link>", styles["Body"]),
-                Paragraph("<b>Portfolio:</b> <link href='https://santiago-orozco.me'>santiago-orozco.me</link> | <link href='https://github.com/a23310173'>github.com/a23310173</link>", styles["Body"]),
+                Paragraph("<b>Portfolio:</b> <link href='https://santiago-orozco.me'>santiago-orozco.me</link> | <link href='https://github.com/a23310173'>GitHub</link>", styles["Body"]),
+            ],
+            [
+                Paragraph("<b>LinkedIn:</b> <link href='https://www.linkedin.com/in/santiagor-orozco/'>linkedin.com/in/santiagor-orozco</link>", styles["Body"]),
+                Paragraph("<b>Availability:</b> Open to selected freelance projects", styles["Body"]),
             ],
         ],
         colWidths=[87 * mm, 87 * mm],
@@ -136,8 +140,8 @@ def build_pdf():
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 0),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 10),
-                ("TOPPADDING", (0, 0), (-1, -1), 2),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
+                ("TOPPADDING", (0, 0), (-1, -1), 1),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 1),
             ]
         )
     )
@@ -151,8 +155,8 @@ def build_pdf():
     section("SUMMARY")
     summary = (
         "Software developer with experience across manufacturing operations, data analysis, and business-focused web systems. "
-        "During my Summer Camp Internship at Jabil, I support Test Engineering through dashboards, databases, and software solutions. "
-        "I have also led web relaunches, internal systems, and KPI-driven platforms for real business use cases."
+        "Currently a Software Engineer Intern at Jabil, developing and maintaining applications, databases, reporting tools, and process automation for Test Engineering. "
+        "Also experienced in e-commerce relaunches, internal business systems, and KPI-driven platforms built for real operational needs."
     )
     story.append(Paragraph(summary, styles["Body"]))
     story.append(Spacer(1, 2))
@@ -163,14 +167,14 @@ def build_pdf():
             [
                 Paragraph(
                     "<b>Technical:</b> Python, PHP, SQL/MySQL, HTML, CSS, JavaScript, Node.js, Angular (TypeScript), "
-                    "Dart/Flutter, Power BI, Power Query, MongoDB Atlas, Cybersecurity, Network Installation.",
+                    "Dart/Flutter, Power BI, Power Query, MongoDB Atlas, ISO 27001, Network Security and Configuration.",
                     styles["Body"],
                 ),
             ],
             [
                 Paragraph(
-                    "<b>Professional:</b> Data Analysis, Dashboard Development, Project Management, Problem-Solving, "
-                    "Analytical Thinking, Team Leadership, Client Collaboration, High-impact presentations (Speak Up).",
+                    "<b>Professional:</b> Data Analysis, Dashboard Development, Agile, Kanban, Project Management, Problem-Solving, "
+                    "Analytical Thinking, Team Leadership, Client Collaboration, Stakeholder Communication and Technical Presentations.",
                     styles["Body"],
                 ),
             ],
@@ -192,19 +196,19 @@ def build_pdf():
     section("WORK EXPERIENCE")
     experience = [
         (
-            "Summer Camp Intern - Test Engineering",
-            "Jabil | Guadalajara, Mexico | Jun 2026 - Aug 2026",
+            "Software Engineer Intern - Test Engineering",
+            "Jabil | Zapopan, Mexico | Jun 2026 - Present",
             [
-                "Analyze manufacturing test data and support operational decision-making through dashboards and structured reporting.",
-                "Build and maintain Power BI dashboards, databases, and software tools for the Test Engineering area.",
+                "Promoted from Software Summer Intern after receiving a seven-month internship extension.",
+                "Develop and maintain applications from requirements gathering through feature implementation and defect resolution, including databases, reporting, documentation, and process automation.",
             ],
         ),
         (
-            "Software Developer & Pharmaceutical Chemist",
-            "DermaSun | Zapopan, Mexico | 2020 - Present | https://www.dermasun.net",
+            "Software Developer & Operations",
+            "DermaSun | Zapopan, Mexico | Feb 2020 - Present | https://www.dermasun.net",
             [
-                "Developed and relaunched the company's e-commerce website, driving a 200% increase in online sales.",
-                "Led internal digital and operational initiatives spanning web systems, process improvement, and infrastructure support.",
+                "Led the company's e-commerce relaunch, followed by a company-reported 200% increase in online sales.",
+                "Lead internal business systems, process improvement, and security infrastructure initiatives.",
             ],
         ),
         (
@@ -226,24 +230,24 @@ def build_pdf():
     section("HIGHLIGHTED PROJECTS")
     projects = [
         (
-            "app.dermasun.net",
-            "Business management system for dermasun.net.",
-            "Centralizes internal processes and supports day-to-day business operations.",
+            "<link href='https://www.dermasun.net'>dermasun.net Landing Page &amp; E-commerce Relaunch</link>",
+            "Responsive product and brand experience.",
+            "Includes a category catalog, product pages, SPF quiz, and quote/contact flow; followed by a company-reported 200% increase in online sales.",
         ),
         (
-            "OZCTECH.net / ozctech.com.mx",
-            "Personal website and professional digital presence.",
-            "Presents services, projects, and contact channels as the base of my professional online identity.",
+            "<link href='https://litrack.site/login'>LiTRACK</link>",
+            "Mobile-first personal KPI web app.",
+            "Turns time, sleep, traffic, focus, activities, appointments, ideas, and goals into daily and weekly insights using PHP, MySQL, and JavaScript.",
+        ),
+        (
+            "app.dermasun.net",
+            "Internal business management system.",
+            "Centralizes operational workflows, information tracking, and day-to-day process management.",
         ),
         (
             "DeployTrack.store",
             "ITIL service management system with KPI dashboard.",
-            "Provides visibility into service workflows, incidents, and operational KPIs.",
-        ),
-        (
-            "Milaquiniela.site",
-            "Node.js web app for the FIFA World Cup 2026 quiniela.",
-            "Manages participants, match tracking, and pool administration for tournament operations.",
+            "Unifies incident, service, and KPI tracking in a structured operational workflow.",
         ),
     ]
 
@@ -257,7 +261,7 @@ def build_pdf():
         [
             [
                 Paragraph("Bachelor of Engineering in Software Development, CETI Colomos", styles["Body"]),
-                Paragraph("2023 - 2027", styles["Body"]),
+                Paragraph("Aug 2023 - Aug 2027", styles["Body"]),
             ],
             [
                 Paragraph("Technologist in Pharmaceutical Chemistry, CETI Colomos", styles["Body"]),
@@ -280,16 +284,15 @@ def build_pdf():
     )
     story.append(education_table)
 
-    section("CERTIFICATES")
+    section("CERTIFICATES & TRAINING")
     certs = [
+        "Project Management and Agile Methodology Fundamentals - Santander Open Academy - Aug 2026",
         "Power BI Intermediate: Data Analysis and Modeling - Santander Open Academy - Jun 2026",
         "Power BI Fundamentals - Santander Open Academy - Jun 2026",
         "Speak Up Workshop - Jabil - Jun 2026",
+        "Healthcare Compliance Training: HCP/HCO Interactions and U.S. Sunshine Act Requirements - Jabil Healthcare - 2026",
         "ISO 27001 Workshop - 2024",
-        "Networking Devices and Initial Configuration by Cisco - 2024",
-        "Networking Basics by Cisco - 2023",
         "Cambridge English Placement Test (CEFR Level C1) - 2021",
-        "Service Excellence Program - ILAC College, Toronto, Canada - 2021",
     ]
     story.append(Paragraph(bullet_lines(certs), styles["Body"]))
 
