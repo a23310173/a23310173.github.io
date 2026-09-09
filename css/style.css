@@ -205,6 +205,7 @@ h1, h2, h3 {
 .profile-logo {
   width: 42px;
   height: 42px;
+  flex-shrink: 0;
   border-radius: 10px;
   object-fit: cover;
   /* Cult UI minimal-card inner shadow ring */
